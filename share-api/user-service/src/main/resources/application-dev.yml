@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+expireTime: 1209600
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#        namespace: prod
