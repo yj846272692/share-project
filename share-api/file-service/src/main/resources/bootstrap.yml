@@ -1,9 +1,6 @@
 spring:
   application:
-    name: user-service
-  profiles:
-    active: dev
-
+    name: file-service
   cloud:
     nacos:
       config:
@@ -15,5 +12,8 @@ spring:
         config-long-poll-timeout: 10000
         config-retry-time: 2000
         max-retry: 3
-        # 开启监听和自动刷新
         refresh-enabled: true
+#    sentinel:
+#      transport:
+#        port: 8719 # sentinel api端口，默认8719
+#        dashboard: localhost:8080

@@ -7,6 +7,10 @@ import com.yj.content.service.ShareService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,6 +37,13 @@ public class ShareServiceImpl implements ShareService {
     @Override
     public List<Share> findAll() {
         return shareRepository.findAll();
+    }
+
+    @Override
+    public Page<Share> getAll(int page, int size, String status) {
+        Sort sort = Sort.by("createTime").descending();
+        Pageable pageable = PageRequest.of(page, size, sort);
+        return shareRepository.findAll(pageable);
     }
 
 

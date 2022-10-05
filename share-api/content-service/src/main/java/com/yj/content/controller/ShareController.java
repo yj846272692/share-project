@@ -1,7 +1,5 @@
 package com.yj.content.controller;
 
-//import com.alibaba.csp.sentinel.annotation.SentinelResource;
-//import com.alibaba.csp.sentinel.slots.block.BlockException;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yj.content.auth.CheckAuthorization;
@@ -10,6 +8,7 @@ import com.yj.content.domain.dto.ShareDto;
 import com.yj.content.domain.entity.Share;
 import com.yj.content.domain.entity.User;
 import com.yj.content.openfeign.UserService;
+import feign.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +34,17 @@ public class ShareController {
 
     private final UserService userService;
 
+//    @GetMapping("/all")
+//    public ResponseResult getAllShares() {
+//        return ResponseResult.success(shareService.findAll());
+//    }
+
+
     @GetMapping("/all")
-    public ResponseResult getAllShares() {
-        return ResponseResult.success(shareService.findAll());
+    ResponseResult getAllShares(@RequestParam(defaultValue = "0") Integer page,
+                                @RequestParam(defaultValue = "5") Integer size,
+                                @RequestParam(defaultValue = "") String status) {
+        return ResponseResult.success(shareService.getAll(page, size, status));
     }
 
     @GetMapping("{id}")

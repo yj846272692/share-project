@@ -8,4 +8,4 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-#        namespace: prod
+        namespace: dev

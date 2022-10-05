@@ -1,0 +1,24 @@
+package top.syhan.file.util;
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+/**
+ * @description:
+ * @author: syhan
+ * @create: 2022-09-28
+ **/
+
+@Component
+@Data
+@PropertySource("classpath:aliyun.properties")
+@ConfigurationProperties(prefix = "aliyun")
+public class AliyunResource {
+    private String accessKeyId;
+    private String accessKeySecret;
+//    private String templateCode;
+//    private String signName;
+}
+

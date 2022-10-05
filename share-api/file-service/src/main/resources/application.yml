@@ -1,13 +1,16 @@
+server:
+  port: 8084
+
 spring:
   application:
-    name: user-service
-  profiles:
-    active: dev
-
+    name: file-service
   cloud:
     nacos:
+      discovery:
+        server-addr: 124.222.178.129:8848
+        namespace: dev
       config:
-        server-addr: localhost:8848
+        server-addr: 124.222.178.129:8848
         file-extension: yml
         namespace: dev
         group: DEFAULT_GROUP
@@ -15,5 +18,7 @@ spring:
         config-long-poll-timeout: 10000
         config-retry-time: 2000
         max-retry: 3
-        # 开启监听和自动刷新
         refresh-enabled: true
+        # prefix: hello
+      username: nacos
+      password: nacos
