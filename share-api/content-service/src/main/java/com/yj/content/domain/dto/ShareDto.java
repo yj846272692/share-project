@@ -1,10 +1,10 @@
 package com.yj.content.domain.dto;
 
-import com.yj.content.domain.entity.Share;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.yj.content.domain.entity.Share;
 
 /**
  * @description:

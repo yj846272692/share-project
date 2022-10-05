@@ -1,6 +1,7 @@
 package com.yj.content.auth;
 
 import com.yj.content.utils.JwtOperator;
+import com.yj.content.utils.RedisUtil;
 import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,8 @@ import java.util.Objects;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class AuthAspect {
     private final JwtOperator jwtOperator;
+
+    private final RedisUtil redis;
 
     @Around("@annotation(com.yj.content.auth.CheckLogin)")
     public Object checkLogin(ProceedingJoinPoint point) throws Throwable {
@@ -57,15 +60,25 @@ public class AuthAspect {
     private void checkToken() {
         try {
             HttpServletRequest request = getHttpServletRequest();
+
+
             String token = request.getHeader("X-Token");
+
             Boolean isValid = jwtOperator.validateToken(token);
             if (!isValid) {
                 throw new SecurityException("Token不合法！");
             }
+
             Claims claims = jwtOperator.getClaimsFromToken(token);
             request.setAttribute("id", claims.get("id"));
             request.setAttribute("nickname", claims.get("nickname"));
             request.setAttribute("role", claims.get("role"));
+
+            String redisToken = redis.get("authUser: " + claims.get("id").toString());
+
+            if (!token.equals(redisToken)) {
+                throw new SecurityException("Token 认证错误");
+            }
         } catch (Exception e) {
             throw new SecurityException("Token不合法！");
         }

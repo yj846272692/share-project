@@ -21,8 +21,8 @@ import java.util.Map;
  * @date 2022/10/4 14:06
  */
 public class JwtOperator {
-    @Value("${jwt.secret:aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrsssttt}")
-    private String secret;
+    @Value("${jwt.secret}")
+    private String secret="aaaaaaabbbbbbcccccdddddaaaaaaabbbbbbcccccdddddaaaaaaabbbbbbcccccddddd";
     /**
      * 有效期，单位秒
      * - 默认2周

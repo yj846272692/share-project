@@ -7,8 +7,6 @@ import com.yj.content.domain.dto.ShareAuditDto;
 import com.yj.content.domain.entity.Share;
 import org.springframework.data.domain.Page;
 
-import java.util.List;
-
 /**
  * @description:
  * @author: yj
@@ -17,14 +15,12 @@ import java.util.List;
 
 public interface ShareService {
     /**
-     * @param
+     * @param id id
      * @return share
      */
     //Share findById(Integer id);
 
-    List<Share> findAll();
-
-    Page<Share> getAll(int page, int size, String status);
+    Page<Share> findAll(Integer page, Integer size);
 
     Share findById(Integer id);
 
