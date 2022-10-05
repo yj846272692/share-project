@@ -1,17 +1,17 @@
-package com.yy.notice.service.impl;
+package com.yj.notice.service.impl;
 
-import com.yy.notice.entity.Notice;
-import com.yy.notice.service.NoticeService;
+import com.yj.notice.entity.Notice;
+import com.yj.notice.service.NoticeService;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import com.yy.notice.repository.NoticeRepository;
+import com.yj.notice.repository.NoticeRepository;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * @description:
- * @author: yy
+ * @author: yj
  * @create: 2022-09-25
  **/
 

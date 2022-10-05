@@ -5,11 +5,11 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-#        namespace: 678a3875-d937-4927-96c8-77fd21acc297
+        namespace: dev
       config:
         server-addr: localhost:8848
         file-extension: yml
-#        namespace: 678a3875-d937-4927-96c8-77fd21acc297
+        namespace: dev
         group: DEFAULT_GROUP
         timeout: 5000
         config-long-poll-timeout: 10000

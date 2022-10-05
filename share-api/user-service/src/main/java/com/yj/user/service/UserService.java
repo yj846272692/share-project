@@ -19,6 +19,8 @@ public interface UserService {
      */
     User findById(Integer id);
 
+    User findMine(Integer id);
+
     /**
      * 登录
      * @param userDto userDto

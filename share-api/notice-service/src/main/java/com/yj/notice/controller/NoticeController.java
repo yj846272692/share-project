@@ -1,8 +1,8 @@
-package com.yy.notice.controller;
+package com.yj.notice.controller;
 
-import com.yy.notice.common.ResponseResult;
-import com.yy.notice.common.ResultCode;
-import com.yy.notice.service.NoticeService;
+import com.yj.notice.common.ResponseResult;
+import com.yj.notice.common.ResultCode;
+import com.yj.notice.service.NoticeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 
 /**
  * @description:
- * @author: yy
+ * @author: yj
  * @create: 2022-09-06
  **/
 

@@ -1,6 +1,6 @@
-package com.yy.notice.repository;
+package com.yj.notice.repository;
 
-import com.yy.notice.entity.Notice;
+import com.yj.notice.entity.Notice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @description:
- * @author: yy
+ * @author: yj
  * @create: 2022-09-25
  **/
 

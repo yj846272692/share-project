@@ -1,4 +1,4 @@
-package com.yy.notice.entity;
+package com.yj.notice.entity;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @description:
- * @author: yy
+ * @author: yj
  * @create: 2022-09-06
  **/
 

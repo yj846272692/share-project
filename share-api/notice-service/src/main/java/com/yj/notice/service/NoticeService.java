@@ -1,12 +1,12 @@
-package com.yy.notice.service;
+package com.yj.notice.service;
 
-import com.yy.notice.entity.Notice;
+import com.yj.notice.entity.Notice;
 
 import java.util.List;
 
 /**
  * @description:
- * @author: yy
+ * @author: yj
  * @create: 2022-09-25
  **/
 

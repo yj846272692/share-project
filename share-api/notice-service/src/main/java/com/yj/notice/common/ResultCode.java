@@ -1,4 +1,4 @@
-package com.yy.notice.common;
+package com.yj.notice.common;
 
 /**
  * @description: 状态枚举

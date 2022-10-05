@@ -1,10 +1,10 @@
 package com.yj.user.controller;
 
-import com.yj.user.auth.CheckLogin;
 import com.yj.user.common.ResponseResult;
 import com.yj.user.common.ResultCode;
 import com.yj.user.domain.dto.UserDto;
 import com.yj.user.service.UserService;
+import com.yj.user.auth.CheckLogin;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

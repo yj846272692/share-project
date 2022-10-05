@@ -1,4 +1,4 @@
-package com.yy.notice;
+package com.yj.notice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
