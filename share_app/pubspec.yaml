@@ -1,0 +1,47 @@
+name: share_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # 本地存储
+  shared_preferences: ^2.0.15
+
+  # 网络请求
+  dio: ^4.0.6
+
+  # 下拉刷新
+  pull_to_refresh: ^2.0.0
+
+  # 轮播图
+  carousel_slider: ^4.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/app.json
+
+  fonts:
+    - family: Zapfino
+      fonts:
+        - asset: assets/fonts/Zapfino.ttf
+

@@ -1,0 +1,31 @@
+{
+  "apps": [
+    {
+      "icon": "https://cdn.staticaly.com/gh/RuErJieFei/PicX@master/20210917/image.71br35zzyfc0.webp",
+      "name": "Google Map",
+      "date": "2022-09-02",
+      "update": true,
+      "description": "Thanks for using Google Maps! This release brings bug fixes that improve our product to help you discover new places and navigate to them.",
+      "version": "5.19",
+      "size": "89.3"
+    },
+    {
+      "icon": "https://cdn.staticaly.com/gh/RuErJieFei/PicX@master/20210917/image.6spzg5ip6yc0.webp",
+      "name": "携程旅行携程旅行携程旅行携程旅行携程旅行携程旅行携程旅行携程旅行",
+      "date": "2022-09-08",
+      "update": false,
+      "description": "新功能介绍【酒店】上线低价组合推荐，智能搭配房型【旅游】快乐出发，暑期特惠【机票】智慧出行，一键对比更省钱",
+      "version": "8.48",
+      "size": "99.3"
+    },
+    {
+      "icon": "https://cdn.staticaly.com/gh/RuErJieFei/PicX@master/20210917/image.3gt4j1za5q20.webp",
+      "name": "PP视频",
+      "date": "2022-09-12",
+      "update": true,
+      "description": "1.优化播放体验；2.增加青少年模式；3.增加App稳定性，修复已知问题；",
+      "version": "3.11.2",
+      "size": "77.3"
+    }
+  ]
+}
