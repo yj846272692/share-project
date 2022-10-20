@@ -13,3 +13,7 @@ spring:
       discovery:
         server-addr: localhost:8848
         namespace: dev
+
+
+rocketmq:
+  name-server: 47.96.31.161:9876

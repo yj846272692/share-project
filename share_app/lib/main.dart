@@ -12,7 +12,7 @@ Request request = Request();
 
 void main() {
   request.init(
-    baseUrl: 'http://172.19.160.1:10000/api/',
+    baseUrl: 'http://10.40.203.107:10000/api/',
     responseFormat: HttpResponseFormat('code', 'data', 'msg', '1'),
   );
   runApp(const MyApp());
